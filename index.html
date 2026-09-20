@@ -82,13 +82,139 @@
 
   <!-- ==================== HERO (NEXT STEP) ==================== -->
   <main>
-    <section class="hero-placeholder">
-      <div class="container py-5">
-        <p class="text-uppercase small fw-semibold letter-spacing mb-2">Trips built around you</p>
-        <h1 class="display-3 fw-semibold mb-3">Discover somewhere worth remembering.</h1>
-        <p class="lead text-secondary mb-0">Hero section will be implemented next.</p>
+    <!-- ==================== HERO ==================== -->
+    <section class="hero-section" id="plan">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <p class="hero-eyebrow">TRIPS BUILT AROUND YOU</p>
+            <h1 class="hero-title">Go somewhere<br><em>you’ll remember.</em></h1>
+            <p class="hero-description">
+              Thoughtful itineraries, local insight, and the freedom to travel your way.
+              Tell us what inspires you and we’ll shape the journey around it.
+            </p>
+            <div class="d-flex flex-column flex-sm-row gap-3 mt-4">
+              <a href="#search" class="btn btn-dark rounded-pill hero-primary-btn">
+                Start planning <i class="bi bi-arrow-up-right ms-2"></i>
+              </a>
+              <a href="#destinations" class="btn btn-outline-dark rounded-pill hero-secondary-btn">
+                Explore destinations
+              </a>
+            </div>
+            <div class="hero-stats row g-3 mt-5">
+              <div class="col-4">
+                <strong>184</strong>
+                <span>Guided routes</span>
+              </div>
+              <div class="col-4">
+                <strong>42k</strong>
+                <span>Happy travelers</span>
+              </div>
+              <div class="col-4">
+                <strong>4.9</strong>
+                <span>Average rating</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="hero-visual">
+              <div class="hero-image">
+                <div class="hero-image-content">
+                  <span>ALPINE ESCAPE</span>
+                  <strong>Lauterbrunnen, Switzerland</strong>
+                </div>
+              </div>
+              <div class="hero-float-card">
+                <span class="hero-float-card__icon"><i class="bi bi-check2"></i></span>
+                <div>
+                  <small>YOUR NEXT ADVENTURE</small>
+                  <strong>Ready when you are</strong>
+                </div>
+              </div>
+              <span class="hero-stamp">EST. 2014</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+
+    <!-- ==================== TRIP SEARCH BANNER ==================== -->
+    <section class="trip-search-section" id="search">
+      <div class="container">
+        <div class="trip-search-card">
+          <div class="trip-search-intro">
+            <p class="mb-1">FIND YOUR WAY</p>
+            <h2 class="mb-0">Where will you go?</h2>
+          </div>
+          <div class="trip-search-fields">
+            <div class="trip-field">
+              <label for="destination">Destination</label>
+              <select id="destination" class="form-select">
+                <option selected>Choose a destination</option>
+                <option>Lauterbrunnen, Switzerland</option>
+                <option>Kyoto, Japan</option>
+                <option>Marrakech, Morocco</option>
+                <option>Santorini, Greece</option>
+              </select>
+            </div>
+            <div class="trip-field">
+              <label for="departing">Departing</label>
+              <input id="departing" class="form-control" type="date">
+            </div>
+            <div class="trip-field">
+              <label for="returning">Returning</label>
+              <input id="returning" class="form-control" type="date">
+            </div>
+            <div class="trip-field">
+              <label for="travelers">Travelers</label>
+              <select id="travelers" class="form-select">
+                <option>1 traveler</option>
+                <option selected>2 travelers</option>
+                <option>3 travelers</option>
+                <option>4+ travelers</option>
+              </select>
+            </div>
+            <button type="button" class="btn btn-dark rounded-pill trip-search-btn">Search trips <i class="bi bi-arrow-right ms-2"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== DESTINATIONS ==================== -->
+    <section class="destinations-section py-5 py-lg-6" id="destinations">
+      <div class="container">
+        <div class="section-heading d-flex flex-column flex-md-row justify-content-between align-items-md-end gap-3 mb-4 mb-lg-5">
+          <div>
+            <p class="section-eyebrow">PLACES TO GO</p>
+            <h2 class="section-title mb-0">A world of possibilities.</h2>
+          </div>
+          <a href="#packages" class="text-dark fw-semibold text-decoration-none">View all destinations <i class="bi bi-arrow-up-right ms-1"></i></a>
+        </div>
+
+        <div class="row g-3 g-lg-4">
+          <div class="col-12 col-md-6 col-lg-4"><article class="destination-card destination-card--1"><div><small>SWITZERLAND</small><h3>Lauterbrunnen</h3></div></article></div>
+          <div class="col-12 col-md-6 col-lg-4"><article class="destination-card destination-card--2"><div><small>JAPAN</small><h3>Kyoto</h3></div></article></div>
+          <div class="col-12 col-md-6 col-lg-4"><article class="destination-card destination-card--3"><div><small>MOROCCO</small><h3>Marrakech</h3></div></article></div>
+          <div class="col-12 col-md-6 col-lg-4"><article class="destination-card destination-card--4"><div><small>GREECE</small><h3>Santorini</h3></div></article></div>
+          <div class="col-12 col-md-6 col-lg-4"><article class="destination-card destination-card--5"><div><small>CHILE</small><h3>Torres del Paine</h3></div></article></div>
+          <div class="col-12 col-md-6 col-lg-4"><article class="destination-card destination-card--6"><div><small>INDONESIA</small><h3>Ubud</h3></div></article></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="site-footer" id="about">
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-5"><a class="meridian-logo meridian-logo--footer mb-3" href="#"><span class="meridian-logo__mark">M</span><span class="meridian-logo__text"><strong>MERIDIAN</strong><small>TRAVEL &amp; JOURNEYS</small></span></a><p class="footer-copy">Thoughtful journeys, beautifully planned. Go further with a trip built around you.</p></div>
+          <div class="col-6 col-lg-2"><h2 class="footer-heading">Explore</h2><ul class="list-unstyled footer-links"><li><a href="#destinations">Destinations</a></li><li><a href="#packages">Packages</a></li><li><a href="#stories">Stories</a></li></ul></div>
+          <div class="col-6 col-lg-2"><h2 class="footer-heading">Company</h2><ul class="list-unstyled footer-links"><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li><li><a href="#privacy">Privacy</a></li></ul></div>
+          <div class="col-lg-3"><h2 class="footer-heading">Follow along</h2><div class="footer-socials d-flex gap-2"><a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a><a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a><a href="#" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a></div></div>
+        </div>
+        <div class="footer-bottom mt-5 pt-4"><small>© 2026 Meridian Travel &amp; Journeys. All rights reserved.</small></div>
+      </div>
+    </footer>
   </main>
 
   <script
