@@ -184,3 +184,86 @@ body {
     height: 34px;
   }
 }
+
+
+/* =========================================================
+   Step 2: Footer
+   ========================================================= */
+
+.site-footer {
+  background: var(--meridian-ink);
+  color: #fff;
+}
+
+.site-footer .meridian-logo {
+  color: #fff;
+}
+
+.site-footer .meridian-logo:hover {
+  color: #fff;
+}
+
+.site-footer .meridian-logo__mark {
+  border-color: rgba(255, 255, 255, 0.75);
+}
+
+.site-footer .meridian-logo__text small {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.footer-copy {
+  max-width: 420px;
+  color: rgba(255, 255, 255, 0.64);
+  line-height: 1.8;
+}
+
+.footer-heading {
+  margin-bottom: 1.1rem;
+  color: #fff;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.footer-links li + li {
+  margin-top: 0.7rem;
+}
+
+.footer-links a,
+.footer-bottom a {
+  color: rgba(255, 255, 255, 0.62);
+  text-decoration: none;
+  transition: color 180ms ease;
+}
+
+.footer-links a:hover,
+.footer-bottom a:hover {
+  color: #fff;
+}
+
+.footer-socials a {
+  display: inline-grid;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 50%;
+  color: #fff;
+  text-decoration: none;
+  transition: background 180ms ease, border-color 180ms ease;
+}
+
+.footer-socials a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.footer-bottom small {
+  font-size: 0.76rem;
+}
