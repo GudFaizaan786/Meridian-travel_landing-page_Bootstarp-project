@@ -1,0 +1,14 @@
+{
+  "name": "meridian-travel-landing-page",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Meridian travel landing page recreated with Bootstrap 5.3.8.",
+  "scripts": {
+    "start": "npx serve .",
+    "preview": "npx serve ."
+  },
+  "dependencies": {
+    "bootstrap": "5.3.8",
+    "bootstrap-icons": "1.13.1"
+  }
+}
