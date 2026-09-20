@@ -267,3 +267,347 @@ body {
 .footer-bottom small {
   font-size: 0.76rem;
 }
+
+
+/* =========================================================
+   Step 3: Hero, trip search and destinations
+   ========================================================= */
+
+.py-lg-6 { padding-top: 6rem !important; padding-bottom: 6rem !important; }
+
+.hero-section {
+  position: relative;
+  overflow: hidden;
+  padding: 5.5rem 0 4.5rem;
+  background: var(--meridian-paper);
+}
+
+.hero-eyebrow,
+.section-eyebrow {
+  margin-bottom: 1rem;
+  color: #68716d;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+
+.hero-title {
+  max-width: 650px;
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(3.5rem, 6.5vw, 6.6rem);
+  font-weight: 500;
+  line-height: 0.94;
+  letter-spacing: -0.045em;
+}
+
+.hero-title em {
+  color: #53605a;
+  font-weight: 400;
+}
+
+.hero-description {
+  max-width: 540px;
+  margin-top: 1.5rem;
+  color: #68716d;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.hero-primary-btn,
+.hero-secondary-btn {
+  min-height: 50px;
+  padding-inline: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.hero-stats {
+  max-width: 500px;
+}
+
+.hero-stats strong,
+.hero-stats span {
+  display: block;
+}
+
+.hero-stats strong {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.hero-stats span {
+  margin-top: 0.2rem;
+  color: #737b77;
+  font-size: 0.76rem;
+}
+
+.hero-visual {
+  position: relative;
+  min-height: 590px;
+}
+
+.hero-image {
+  position: absolute;
+  inset: 0 0 0 8%;
+  overflow: hidden;
+  border-radius: 48% 48% 8px 8px / 42% 42% 8px 8px;
+  background:
+    linear-gradient(180deg, rgba(14, 27, 25, 0.05), rgba(14, 27, 25, 0.72)),
+    url("https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=85")
+    center / cover;
+}
+
+.hero-image::before {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(130deg, rgba(255,255,255,.08), transparent 45%);
+  content: "";
+}
+
+.hero-image-content {
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+  left: 2rem;
+  color: #fff;
+}
+
+.hero-image-content span {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+.hero-image-content strong {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.5rem, 2.8vw, 2.25rem);
+  font-weight: 500;
+}
+
+.hero-float-card {
+  position: absolute;
+  right: -1rem;
+  bottom: 4.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  max-width: 250px;
+  padding: 1rem 1.15rem;
+  background: #fff;
+  border: 1px solid rgba(23, 32, 29, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(23, 32, 29, 0.14);
+}
+
+.hero-float-card__icon {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  flex: 0 0 38px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--meridian-accent);
+}
+
+.hero-float-card small {
+  display: block;
+  color: #7a827e;
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.hero-float-card strong {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.82rem;
+}
+
+.hero-stamp {
+  position: absolute;
+  top: 2.2rem;
+  left: 0;
+  display: grid;
+  width: 82px;
+  height: 82px;
+  place-items: center;
+  border: 1px solid rgba(23, 32, 29, 0.25);
+  border-radius: 50%;
+  color: #59635e;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  transform: rotate(-12deg);
+}
+
+.trip-search-section {
+  position: relative;
+  z-index: 3;
+  margin-top: -2rem;
+}
+
+.trip-search-card {
+  display: grid;
+  grid-template-columns: 1.15fr 2.85fr;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.4rem;
+  background: #fff;
+  border: 1px solid var(--meridian-line);
+  border-radius: 20px;
+  box-shadow: 0 20px 55px rgba(23, 32, 29, 0.1);
+}
+
+.trip-search-intro p {
+  color: #7b847f;
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+.trip-search-intro h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.65rem;
+  font-weight: 500;
+}
+
+.trip-search-fields {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) auto;
+  gap: 0.7rem;
+}
+
+.trip-field {
+  min-width: 0;
+}
+
+.trip-field label {
+  display: block;
+  margin: 0 0 0.35rem 0.75rem;
+  color: #77807b;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.trip-field .form-select,
+.trip-field .form-control {
+  min-height: 46px;
+  border-color: var(--meridian-line);
+  border-radius: 10px;
+  color: var(--meridian-ink);
+  font-size: 0.78rem;
+}
+
+.trip-search-btn {
+  align-self: end;
+  min-height: 46px;
+  white-space: nowrap;
+  padding-inline: 1.1rem;
+  font-size: 0.76rem;
+  font-weight: 600;
+}
+
+.destinations-section {
+  background: #fff;
+}
+
+.section-title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.5rem, 4vw, 4.1rem);
+  font-weight: 500;
+  letter-spacing: -0.035em;
+}
+
+.destination-card {
+  position: relative;
+  min-height: 410px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  padding: 1.6rem;
+  border-radius: 18px;
+  isolation: isolate;
+  background-position: center;
+  background-size: cover;
+}
+
+.destination-card::before {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(180deg, transparent 35%, rgba(0,0,0,.72));
+  content: "";
+}
+
+.destination-card::after {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background: inherit;
+  content: "";
+  transition: transform 450ms ease;
+}
+
+.destination-card:hover::after {
+  transform: scale(1.04);
+}
+
+.destination-card > div {
+  color: #fff;
+}
+
+.destination-card small {
+  font-size: 0.61rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+}
+
+.destination-card h3 {
+  margin: 0.35rem 0 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.destination-card--1 { background-image: url("https://images.unsplash.com/photo-1527668752968-14dc70a27c95?auto=format&fit=crop&w=900&q=85"); }
+.destination-card--2 { background-image: url("https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=900&q=85"); }
+.destination-card--3 { background-image: url("https://images.unsplash.com/photo-1597212618440-806262de4f6b?auto=format&fit=crop&w=900&q=85"); }
+.destination-card--4 { background-image: url("https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=900&q=85"); }
+.destination-card--5 { background-image: url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=85"); }
+.destination-card--6 { background-image: url("https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=900&q=85"); }
+
+@media (max-width: 1199.98px) {
+  .hero-visual { min-height: 520px; }
+  .trip-search-card { grid-template-columns: 1fr; }
+  .trip-search-fields { grid-template-columns: repeat(2, 1fr); }
+  .trip-search-btn { width: fit-content; }
+}
+
+@media (max-width: 991.98px) {
+  .hero-section { padding: 4.5rem 0 4rem; }
+  .hero-visual { min-height: 580px; margin-top: 1rem; }
+  .hero-image { inset: 0 8% 0 4%; }
+  .hero-stamp { left: 1%; }
+  .hero-float-card { right: 0; }
+}
+
+@media (max-width: 575.98px) {
+  .hero-section { padding-top: 3.5rem; }
+  .hero-title { font-size: clamp(3rem, 15vw, 4.5rem); }
+  .hero-stats strong { font-size: 1.45rem; }
+  .hero-visual { min-height: 430px; }
+  .hero-image { inset: 0 0 0 0; border-radius: 38% 38% 8px 8px / 30% 30% 8px 8px; }
+  .hero-float-card { right: 0.5rem; bottom: 1.5rem; }
+  .hero-stamp { top: 0.5rem; left: 0.5rem; width: 65px; height: 65px; }
+  .trip-search-fields { grid-template-columns: 1fr; }
+  .trip-search-btn { width: 100%; }
+  .destination-card { min-height: 360px; }
+}
