@@ -1,0 +1,1108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meridian Travel Agency">
+
+    <title>Meridian Travel Landing Page</title>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="position-sticky top-0 z-3">
+        <nav class="navbar py-4 bg-success ">
+
+            <div class="container-lg d-flex justify-content-between align-items-center ">
+
+                <!-- Logo -->
+                <a href="#" class="navbar-brand fw-bold fs-3 ">
+                    Meridian
+                    <span class="text-info logo-dot">●</span>
+                </a>
+
+                <!-- Navigation -->
+                <div class="d-none d-lg-flex align-items-center gap-4">
+
+                    <a href="#destinations" class="meridian-nav-link text-decoration-none">
+                        Destinationse
+                    </a>
+
+                    <a href="#packages" class="meridian-nav-link text-decoration-none">
+                        Packages
+                    </a>
+
+                    <a href="#stories" class="meridian-nav-link text-decoration-none">
+                        Stories
+                    </a>
+
+                    <a href="#about" class="meridian-nav-link text-decoration-none">
+                        About
+                    </a>
+
+                </div>
+
+
+                <div class="d-flex align-items-center gap-4">
+
+                    <a href="tel:+14150229981" class="text-decoration-none text-light d-none d-lg-inline number">
+                        +1 (415) 022 9981
+                    </a>
+
+                    <a href="#plan-trip" class="btn btn-dark rounded-pill px-4 py-3 fw-semibold text-success">
+                        Plan a trip
+                    </a>
+
+                </div>
+
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+
+    <section class="bg-primary pt-5 pb-5">
+
+        <div class="container-lg">
+
+            <!-- Hero -->
+            <div class="row align-items-center g-4 py-lg-5">
+
+                <!-- Content -->
+                <div class="col-12 col-lg-6">
+
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <span class="hero-line bg-secondary"></span>
+                        <span class="hero-eyebrow text-uppercase small text-secondary">
+                           ---  Trips built around you
+                        </span>
+                    </div>
+
+                    <h1 class="hero-title display-3 fw-semibold mb-4 text-success">
+                        Travel that follows
+                        <em class="text-secondary">your </em> line on the
+                        map, not everyone
+                        else's.
+                    </h1>
+
+                    <p class="hero-description fs-4 mb-4 text-success">
+                        Meridian pairs you with local guides and small-group
+                        routes across 40 countries — no queues, no filler
+                        days, no itinerary you didn't ask for.
+                    </p>
+
+                    <div class="d-flex flex-wrap gap-2 mb-5">
+
+                        <a href="#plan-trip" class="btn btn-clay rounded-pill px-4 py-3 text-white bg-info">
+                            Start planning
+                        </a>
+
+                        <a href="#packages" class="btn btn-outline-light rounded-pill px-4 py-3 text-white">
+                            See packages
+                        </a>
+                    </div>
+
+                    <!-- Stats -->
+                    <div class="border-top border-light border-opacity-50 pt-4 ">
+
+                        <div class="row mx-0">
+
+                            <div class="col-4">
+                                <h3 class="h3 text-success mb-1 number">184</h3>
+                                <p class="small hero-stat-text mb-0 text-success">
+                                    Guided routes
+                                </p>
+                            </div>
+
+                            <div class="col-4">
+                                <h3 class="h3 text-success mb-1 number">42k</h3>
+                                <p class="small hero-stat-text mb-0 text-success">
+                                    Travelers hosted
+                                </p>
+                            </div>
+
+                            <div class="col-4">
+                                <h3 class="h3 text-success mb-1 number">4.9</h3>
+                                <p class="small hero-stat-text mb-0 text-success">
+                                    Average rating
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Images -->
+
+
+                <div class="col-12 col-lg-6">
+
+                    <div class="position-relative" style="height: 590px;">
+
+                        <!-- Mountain Image -->
+                        <img src="./images/hero-mountain.jpg" alt="Mountain" class="position-absolute top-0 end-0
+                            w-50 h-50 object-fit-cover rounded-3">
+
+                        <!-- Road Image -->
+                        <img src="./images/hero-road.jpg" alt="Road" class="position-absolute bottom-0 start-0
+                                w-50 object-fit-cover rounded-3" style="height: 35%; top:45%; margin-left: 12%;">
+
+                        <!-- Trip Confirmed Card -->
+                        <div class="position-absolute bg-success rounded-3 shadow p-3
+                                w-50%" style="top: 32%; left: 23%;">
+
+                            <div class="d-flex align-items-center gap-2">
+
+                                <div class="rounded-circle bg-info text-white
+                                     d-flex justify-content-center align-items-center
+                                    flex-shrink-0" style="width: 40px; height: 40px;">
+                                    ✓
+                                </div>
+
+                                <div class="min-w-0">
+                                    <h6 class="fw-semibold text-dark mb-1">
+                                        Trip confirmed
+                                    </h6>
+
+                                    <p class="small text-dark mb-0">
+                                        Kyoto, 6 days — guide<br>
+                                        assigned
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Trip Search -->
+
+            <section class="meridian-hero">
+
+                <div class="d-flex justify-content-center position-relative" style="margin-bottom: -120px;">
+
+                    <div id="plan-trip" class="bg-success rounded-4 shadow p-3 p-lg-4" style="width: 85%;">
+
+                        <form>
+                            <div class="row align-items-center g-0">
+
+                                <div class="col-6 col-lg-3 p-3 border-end">
+                                    <label class="text-uppercase small fw-semibold text-info">
+                                        Destination
+                                    </label>
+                                    <div class="fs-5 mt-3 text-dark">
+                                        Where to?
+                                    </div>
+                                    <small class="text-light">
+                                        Search countries, cities
+                                    </small>
+                                </div>
+
+                                <div class="col-6 col-lg-2 p-3 border-end">
+                                    <label class="text-uppercase small fw-semibold text-info">
+                                        Departing
+                                    </label>
+                                    <div class="fs-5 mt-3 text-dark">
+                                        Add date
+                                    </div>
+                                    <small class="text-light">
+                                        Flexible ± 3 days
+                                    </small>
+                                </div>
+
+                                <div class="col-6 col-lg-2 p-3 border-end">
+                                    <label class="text-uppercase small fw-semibold text-info">
+                                        Returning
+                                    </label>
+                                    <div class="fs-5 mt-3 text-dark">
+                                        Add date
+                                    </div>
+                                    <small class="text-light">
+                                        Round trip
+                                    </small>
+                                </div>
+
+                                <div class="col-6 col-lg-2 p-3 border-end">
+                                    <label class="text-uppercase small fw-semibold text-info">
+                                        Travelers
+                                    </label>
+                                    <div class="fs-5 mt-3 text-dark">
+                                        2 Adults
+                                    </div>
+                                    <small class="text-light">
+                                        0 Children
+                                    </small>
+                                </div>
+
+                                <div class="col-12 col-lg-3 p-3">
+                                    <button type="submit"
+                                        class="btn btn-clay bg-info text-success rounded-pill w-100 py-3 fw-semibold">
+                                        Search trips
+                                    </button>
+                                </div>
+
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class=" py-5 bg-success ">
+        <div class="container-lg py-lg-5">
+
+            <!-- Heading -->
+            <div class="row align-items-end mb-4 mb-lg-5">
+
+                <div class="col-12 col-md-6 col-lg-6">
+                    <div class="small text-uppercase fw-semibold mb-2 text-info pt-5">
+                        Where people are headed
+                    </div>
+
+                    <h2 class="display-6 fw-semibold mb-0">
+                        Handpicked destinations,
+                        mapped by the guides who
+                        live there.
+                    </h2>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-5 offset-lg-1 mt-4 mt-lg-0">
+                    <p class="small text-light mb-0 fs-5">
+                        Every route on Meridian is designed and walked first
+                        by a local lead — these are the six travelers are
+                        booking most this season.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- Destination Grid -->
+            <div class="row g-3">
+
+                <!-- Large Card -->
+                <div class="col-12 col-md-6 col-lg-6">
+                    <div class="destination-card position-relative overflow-hidden rounded-3 h-100">
+
+                        <img src="./images/Switzerland.jpg" alt="Lauterbrunnen Switzerland"
+                            class="w-100 h-100 object-fit-cover">
+
+                        <div class="position-absolute bottom-0 start-0 w-100 p-3 text-white">
+                            <h3 class="h6 fw-semibold mb-1 fs-5 text-success">
+                                Lauterbrunnen, Switzerland
+                            </h3>
+
+                            <small class="number text-success">
+                                Alpine valleys · 5-8 days
+                            </small>
+                        </div>
+
+                        <span
+                            class="position-absolute bottom-0 end-0 number fw-bold
+                                 m-3 badge rounded-pill bg-dark bg-opacity-25 border border-whiteborder-opacity-50  py-2 px-3">
+                            From $1,240
+                        </span>
+
+                    </div>
+                </div>
+
+
+                <!-- Right Top + Bottom -->
+                <div class="col-12 col-md-6 col-lg-6">
+
+                    <div class="row g-3">
+
+                        <!-- Kyoto -->
+                        <div class="col-12">
+                            <div class="destination-card destination-card-sm
+                                position-relative overflow-hidden rounded-3">
+
+                                <img src="./images/Japan.jpg" alt="Kyoto Japan" class="w-100 h-100 object-fit-cover">
+
+                                <div class="position-absolute bottom-0 start-0 p-3 text-white">
+                                    <h3 class="h6 fw-semibold mb-1 fs-5 text-success">
+                                        Kyoto, Japan
+                                    </h3>
+
+                                    <small class="text-success">
+                                        Temples & tea houses
+                                    </small>
+                                </div>
+
+                                <span
+                                    class="position-absolute bottom-0 end-0 number  py-2 px-3 fw-bold
+                                    m-3 badge rounded-pill bg-dark  bg-opacity-25 border border-whiteborder-opacity-50">
+                                    From $1,890
+                                </span>
+
+                            </div>
+                        </div>
+
+                        <!-- Marrakech -->
+                        <div class="col-12">
+                            <div class="destination-card destination-card-sm
+                                position-relative overflow-hidden rounded-3">
+
+                                <img src="./images/Morocco.jpg" alt="Marrakech Morocco"
+                                    class="w-100 h-100 object-fit-cover">
+
+                                <div class="position-absolute bottom-0 start-0 p-3 text-white">
+                                    <h3 class="h6 fw-semibold mb-1 fs-5 text-success">
+                                        Marrakech, Morocco
+                                    </h3>
+
+                                    <small class="text-success">
+                                        Souks & desert edge
+                                    </small>
+                                </div>
+
+                                <span
+                                    class="position-absolute bottom-0 end-0 number  py-2 px-3 fw-bold
+                                        m-3 badge rounded-pill bg-dark  bg-opacity-25 border border-whiteborder-opacity-50">
+                                    From $980
+                                </span>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- Bottom 3 Cards -->
+
+                <!-- Santorini -->
+                <div class="col-12 col-md-4">
+                    <div class="destination-card destination-card-bottom
+                            position-relative overflow-hidden rounded-3">
+
+                        <img src="./images/Greece.jpg" alt="Santorini Greece" class="w-100 h-100 object-fit-cover">
+
+                        <div class="position-absolute bottom-0 start-0 p-3 text-white">
+                            <h3 class="h6 fw-semibold mb-1 fs-5 text-success">
+                                Santorini, Greece
+                            </h3>
+
+                            <small class="text-success">Cliffside villages</small>
+                        </div>
+
+                        <span class="position-absolute bottom-0 end-0 number  py-2 px-3 fw-bold
+                                 m-3 badge rounded-pill bg-dark  bg-opacity-25 border border-whiteborder-opacity-50">
+                            From $1,410
+                        </span>
+
+                    </div>
+                </div>
+
+
+                <!-- Torres del Paine -->
+                <div class="col-12 col-md-4">
+                    <div class="destination-card destination-card-bottom
+                            position-relative overflow-hidden rounded-3">
+
+                        <img src="./images/Chile.jpg" alt="Torres del Paine Chile" class="w-100 h-100 object-fit-cover">
+
+                        <div class="position-absolute bottom-0 start-0 p-3 text-white">
+                            <h3 class="h6 fw-semibold mb-1 fs-5 text-success">
+                                Torres del Paine, Chile
+                            </h3>
+
+                            <small class="text-success">Glaciers & trails</small>
+                        </div>
+
+                        <span class="position-absolute bottom-0 end-0 number  py-2 px-3 fw-bold
+                                 m-3 badge rounded-pill bg-dark  bg-opacity-25 border border-whiteborder-opacity-50">
+                            From $2,050
+                        </span>
+
+                    </div>
+                </div>
+
+
+                <!-- Ubud -->
+                <div class="col-12 col-md-4">
+                    <div class="destination-card destination-card-bottom
+                            position-relative overflow-hidden rounded-3">
+
+                        <img src="./images/Bali.jpg" alt="Ubud Bali" class="w-100 h-100 object-fit-cover">
+
+                        <div class="position-absolute bottom-0 start-0 p-3 text-white">
+                            <h3 class="h6 fw-semibold mb-1 fs-5 text-success">
+                                Ubud, Bali
+                            </h3>
+
+                            <small class="text-success">Rice terraces & rivers</small>
+                        </div>
+
+                        <span class="position-absolute bottom-0 end-0 number  py-2 px-3 fw-bold
+                                m-3 badge rounded-pill bg-dark  bg-opacity-25 border border-whiteborder-opacity-50">
+                            From $860
+                        </span>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==================== CHOOSE YOUR PACE ==================== -->
+    <section id="packages" class="py-5 bg-danger text-white">
+
+        <div class="container-lg py-5">
+
+            <!-- Heading -->
+            <div class="row align-items-end mb-5">
+
+                <div class="col-12 col-md-7 col-lg-7">
+
+                    <p class="small text-uppercase text-success mb-3">
+                        Choose your pace
+                    </p>
+
+                    <h2 class="display-6 fw-semibold mb-0 text-ink  ">
+                        Three ways to travel with
+                        <br class="d-none d-md-block">
+                        Meridian.
+                    </h2>
+
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-4 offset-lg-1 mt-4 mt-lg-0">
+
+                    <p class="small text-white-50 mb-0">
+                        Same local guides and small groups
+                        throughout — the difference is how much
+                        you want to cover and how much comfort
+                        you want along the way.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Pricing Cards -->
+            <div class="row g-3 align-items-stretch">
+
+
+                <!-- Explorer -->
+                <div class="col-12 col-md-4 col-lg-4">
+
+                    <div class="pricing-card bg-warning
+                        
+                            border border-white border-opacity-10
+                            rounded-4 p-4 py-5 h-100
+                            d-flex flex-column mt-2 ">
+
+                        <p class="small text-uppercase text-success mb-3">
+                            Explorer
+                        </p>
+
+                        <h3 class="h4 fw-semibold mb-2 text-success">
+                            Solo & duo trails
+                        </h3>
+
+                        <p class="small text-white-50 mb-4 text-success">
+                            Light-footprint routes for one or two,
+                            built for travelers who'd rather wander
+                            than wait.
+                        </p>
+
+
+                        <!-- Price -->
+                        <div class="d-flex align-items-baseline gap-1 mb-4">
+
+                            <span class="display-6 fw-semibold text-success number">
+                                $890
+                            </span>
+
+                            <span class="small  text-success">
+                                / person, 6 days
+                            </span>
+
+                        </div>
+
+
+                        <!-- Features -->
+                        <ul class="list-unstyled small text-white-50 mb-4">
+
+                            <li class="mb-3">
+                                <span class="text-white-50 me-2 text-success number">—</span>
+                                Groups of 2-4 max
+                            </li>
+
+                            <li class="mb-3">
+                                <span class="text-white-50 me-2 text-success">—</span>
+                                Local guide, half-day
+                            </li>
+
+                            <li class="mb-3">
+                                <span class="text-white-50 me-2 text-success">—</span>
+                                Guesthouse stays
+                            </li>
+
+                            <li>
+                                <span class="text-white-50 me-2 text-success">—</span>
+                                Airport transfers
+                            </li>
+
+                        </ul>
+
+
+                        <!-- Button -->
+                        <a href="#plan-trip" class="btn btn-outline-light rounded-pill
+                              w-100 py-2 mt-auto text-success  border border-whiteborder-opacity-50 bg-warning">
+                            Choose Explorer
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Signature -->
+                <div class="col-12 col-md-4 col-lg-4">
+
+                    <div class="pricing-card pricing-featured
+                            bg-warning
+                            rounded-4 p-4 py-5 h-100
+                            d-flex flex-column ">
+
+                        <p class="small text-uppercase text-info mb-3">
+                            Signature
+                        </p>
+
+                        <h3 class="h4 fw-semibold mb-2 text-success">
+                            Full-route journeys
+                        </h3>
+
+                        <p class="small text-white-50 mb-4 text-success">
+                            Meridian's most-booked format — a
+                            complete route, a dedicated guide,
+                            and no logistics left to you.
+                        </p>
+
+
+                        <!-- Price -->
+                        <div class="d-flex align-items-baseline gap-1 mb-4">
+
+                            <span class="display-6 fw-semibold text-success number">
+                                $1,640
+                            </span>
+
+                            <span class="small  text-success number">
+                                / person, 9 days
+                            </span>
+
+                        </div>
+
+
+                        <!-- Features -->
+                        <ul class="list-unstyled small text-white-50 mb-4">
+
+                            <li class="mb-3">
+                                <span class="text-info me-2 text-success">—</span>
+                                Groups of 6-10 max
+                            </li>
+
+                            <li class="mb-3">
+                                <span class="text-info me-2 text-success">—</span>
+                                Guide with you all day
+                            </li>
+
+                            <li class="mb-3">
+                                <span class="text-info me-2 text-success">—</span>
+                                Boutique stays
+                            </li>
+
+                            <li class="mb-3">
+                                <span class="text-info me-2 text-success">—</span>
+                                All transfers & entries
+                            </li>
+
+                            <li>
+                                <span class="text-info me-2 text-success">—</span>
+                                24/7 trip support
+                            </li>
+
+                        </ul>
+
+
+                        <!-- Button -->
+                        <a href="#plan-trip" class="btn btn-clay rounded-pill
+                              w-100 py-2 mt-auto fw-semibold bg-info text-success">
+                            Choose Signature
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Heritage -->
+                <div class="col-12 col-md-4 col-lg-4">
+
+                    <div class="pricing-card
+                            bg-warning
+                            border border-white border-opacity-10
+                            rounded-4 p-4 py-5 h-100
+                            d-flex flex-column mt-2">
+
+                        <p class="small text-uppercase text-info mb-3 text-success">
+                            Heritage
+                        </p>
+
+                        <h3 class="h4 fw-semibold mb-2 text-success">
+                            Family & multi-gen
+                        </h3>
+
+                        <p class="small text-white-50 mb-4 text-success">
+                            Slower mornings, shorter transfers,
+                            routes built to work for grandparents
+                            and kids alike.
+                        </p>
+
+
+                        <!-- Price -->
+                        <div class="d-flex align-items-baseline gap-1 mb-4">
+
+                            <span class="display-6 fw-semibold text-success number">
+                                $1,290
+                            </span>
+
+                            <span class="small text-success number">
+                                / person, 8 days
+                            </span>
+
+                        </div>
+
+
+                        <!-- Features -->
+                        <ul class="list-unstyled small text-white-50 mb-4">
+
+                            <li class="mb-3">
+                                <span class="text-white-50 me-2 text-success">—</span>
+                                Groups of 4-8 max
+                            </li>
+
+                            <li class="mb-3">
+                                <span class="text-white-50 me-2 text-success">—</span>
+                                Family-paced itinerary
+                            </li>
+
+                            <li class="mb-3">
+                                <span class="text-white-50 me-2 text-success">—</span>
+                                Connecting rooms
+                            </li>
+
+                            <li>
+                                <span class="text-white-50 me-2 text-success">—</span>
+                                Kid-friendly local leads
+                            </li>
+
+                        </ul>
+
+
+                        <!-- Button -->
+                        <a href="#plan-trip" class="btn btn-outline-light rounded-pill
+                              w-100 py-2 mt-auto text-success  border border-whiteborder-opacity-50 bg-warning">
+                            Choose Heritage
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ==================== TESTIMONIALS ==================== -->
+    <section id="stories" class="bg-success py-5">
+        <div class="container-lg py-5">
+
+            <!-- Section Heading -->
+            <div class="row align-items-end mb-5">
+                <div class="col-12  col-lg-7">
+                    <p class="small text-uppercase text-info fw-semibold mb-3">
+                        From the road
+                    </p>
+
+                    <h2 class="display-5 fw-normal text-ink mb-0">
+                        What travelers say after
+                        <br class="d-none d-md-block">
+                        they're home.
+                    </h2>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-4 offset-lg-1 mt-4 mt-lg-0">
+                    <p class="small text-light mb-0">
+                        Unedited notes, pulled from post-trip check-ins.
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- Testimonial Cards -->
+            <div class="row g-3">
+
+                <!-- Card 1 -->
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="testimonial-card bg-white border rounded-3 p-4 h-100
+                            d-flex flex-column">
+
+                        <!-- Quote -->
+                        <div class="fs-1 lh-1 text-warning mb-4">
+                            &ldquo;
+                        </div>
+
+                        <!-- Text -->
+                        <p class="small text-ink lh-lg mb-4">
+                            Our guide in Kyoto rerouted the whole afternoon
+                            around a festival we stumbled into. That's not
+                            something an app itinerary does.
+                        </p>
+
+                        <!-- Customer -->
+                        <div class="d-flex align-items-center gap-3 mt-auto">
+
+                            <img src="./images/priya.jpg" alt="Priya Nair" width="40" height="40"
+                                class="rounded-circle object-fit-cover">
+
+                            <div>
+                                <p class="small fw-semibold text-ink mb-0">
+                                    Priya Nair
+                                </p>
+                                <p class="small text-light mb-0">
+                                    Signature, Japan
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- Card 2 - Featured -->
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="testimonial-card bg-info text-white rounded-3 p-4 h-100
+                            d-flex flex-column">
+
+                        <!-- Quote -->
+                        <div class="fs-1 lh-1 text-white-50 mb-4">
+                            &ldquo;
+                        </div>
+
+                        <!-- Text -->
+                        <p class="small lh-lg mb-4">
+                            Took my parents and my ten-year-old on the same
+                            trip and nobody was miserable. Genuine didn't
+                            think that was possible.
+                        </p>
+
+                        <!-- Customer -->
+                        <div class="d-flex align-items-center gap-3 mt-auto">
+
+                            <img src="./images/daniel.jpg" alt="Daniel Ortiz" width="40" height="40"
+                                class="rounded-circle object-fit-cover">
+
+                            <div>
+                                <p class="small fw-semibold mb-0">
+                                    Daniel Ortiz
+                                </p>
+                                <p class="small text-white-50 mb-0">
+                                    Heritage, Morocco
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- Card 3 -->
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="testimonial-card bg-white border rounded-3 p-4 h-100
+                            d-flex flex-column">
+
+                        <!-- Quote -->
+                        <div class="fs-1 lh-1 text-warning mb-4">
+                            &ldquo;
+                        </div>
+
+                        <!-- Text -->
+                        <p class="small text-ink lh-lg mb-4">
+                            Booked ten days before departure. Meridian had a
+                            guide and a room sorted within a day. Patagonia
+                            in April, no regrets.
+                        </p>
+
+                        <!-- Customer -->
+                        <div class="d-flex align-items-center gap-3 mt-auto">
+
+                            <img src="./images/freya.jpg" alt="Freya Lindqvist" width="40" height="40"
+                                class="rounded-circle object-fit-cover">
+
+                            <div>
+                                <p class="small fw-semibold text-ink mb-0">
+                                    Freya Lindqvist
+                                </p>
+                                <p class="small text-light mb-0">
+                                    Explorer, Chile
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ==================== NEWSLETTER ==================== -->
+    <section class="bg-paper-2 py-5">
+        <div class="container-lg py-4">
+
+            <div class="row align-items-center g-4">
+
+                <!-- Heading -->
+                <div class="col-12 col-md-6 col-lg-6">
+                    <h3 class="h4 fw-bold text-ink mb-0">
+                        Get new routes before they're
+                        <br class="d-none d-md-block">
+                        announced publicly.
+                    </h3>
+                </div>
+
+
+                <!-- Newsletter Form -->
+                <div class="col-12  col-lg-6">
+
+                    <form id="newsletterForm" class="row g-2">
+
+                        <div class="col-12 col-md-7">
+                            <label for="newsletterEmail" class="visually-hidden ">
+                                Email address
+                            </label>
+
+                            <input type="email" class="form-control  rounded-pill px-4 py-3" id="newsletterEmail"
+                                placeholder="you@email.com" required >
+
+                            <div class="invalid-feedback ms-3">
+                                Please enter a valid email address.
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-auto">
+                            <button type="submit" class="btn btn-clay bg-info text-success rounded-pill px-4 py-3 fw-semibold w-100">
+                                Notify me
+                            </button>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- Footer -->
+
+    <footer class="meridian-footer py-5 bg-primary">
+
+        <div class="container-lg ">
+
+            <!-- Top -->
+            <div class="row py-5">
+
+                <!-- Meridian -->
+                <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0">
+
+                    <h3 class="text-success fw-bold mb-4">
+                        Meridian
+                    </h3>
+
+                    <p class="footer-description mb-0 fs-5 text-white-50">
+                        Small-group, guide-led travel across 40
+                        countries. Planned with someone who's
+                        actually been there.
+                    </p>
+
+                </div>
+
+                <!-- Explore -->
+                <div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-5 mb-lg-0">
+
+                    <h6 class="text-success fw-semibold mb-4">
+                        Explore
+                    </h6>
+
+                    <ul class="list-unstyled mb-0">
+
+                        <li class="mb-3">
+                            <a href="#destinations" class="footer-link text-decoration-none text-white-50">
+                                Destinations
+                            </a>
+                        </li>
+
+                        <li class="mb-3">
+                            <a href="#packages" class="footer-link text-decoration-none text-white-50">
+                                Packages
+                            </a>
+                        </li>
+
+                        <li class="mb-3">
+                            <a href="#stories" class="footer-link text-decoration-none text-white-50">
+                                Traveler stories
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#guide" class="footer-link text-decoration-none text-white-50">
+                                Become a guide
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Company -->
+
+                <div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-5 mb-lg-0">
+
+                    <h6 class="text-success fw-semibold mb-4">
+                        Company
+                    </h6>
+
+                    <ul class="list-unstyled mb-0">
+
+                        <li class="mb-3">
+                            <a href="#about" class="footer-link text-decoration-none text-white-50">
+                                About Meridian
+                            </a>
+                        </li>
+
+                        <li class="mb-3">
+                            <a href="#careers" class="footer-link text-decoration-none text-white-50">
+                                Careers
+                            </a>
+                        </li>
+
+                        <li class="mb-3">
+                            <a href="#press" class="footer-link text-decoration-none text-white-50">
+                                Press
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#sustainability" class="footer-link text-decoration-none text-white-50">
+                                Sustainability
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Support -->
+                <div class="col-6 col-sm-6 col-md-6 col-lg-2">
+                    <h6 class="text-success fw-semibold mb-4">
+                        Support
+                    </h6>
+
+                    <ul class="list-unstyled mb-0">
+
+                        <li class="mb-3">
+                            <a href="#help" class="footer-link text-decoration-none text-white-50">
+                                Help center
+                            </a>
+                        </li>
+
+                        <li class="mb-3">
+                            <a href="#cancellations" class="footer-link text-decoration-none text-white-50">
+                                Cancellations
+                            </a>
+                        </li>
+
+                        <li class="mb-3">
+                            <a href="#insurance" class="footer-link text-decoration-none text-white-50">
+                                Trip insurance
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#contact" class="footer-link text-decoration-none text-white-50">
+                                Contact us
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- Bottom -->
+            <div class="border-top border-secondary mt-4 pt-4
+                    d-flex justify-content-between align-items-center">
+
+                <p class="footer-copy mb-0 text-white-50">
+                    © 2026 Meridian Travel Co. All rights reserved.
+                </p>
+
+                <div class="d-flex gap-3">
+
+                    <a href="#" class="rounded-circle d-flex justify-content-center align-items-center
+                        border border-secondary text-white text-decoration-none p-2">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+
+                    <a href="#" class="rounded-circle d-flex justify-content-center align-items-center
+                        border border-secondary text-white text-decoration-none p-2">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    <a href="#" class="rounded-circle d-flex justify-content-center align-items-center
+                        border border-secondary text-white text-decoration-none p-2">
+                        <i class="bi bi-twitter-x"></i>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+    <script type="module" src="/js/main.js"></script>
+
+</body>
+
+</html>

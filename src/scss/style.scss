@@ -1,0 +1,76 @@
+@import "bootstrap/scss/functions";
+
+@import "./custom";
+
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+@import "bootstrap/scss/bootstrap";
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+ .number {
+        font-family: 'Fraunces', serif;
+ }
+
+.logo-dot {
+    position: relative;
+    top: -10px;
+}
+
+.meridian-nav-link:hover {
+    color: $ink-soft;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    background-color: $pine;
+}
+
+.footer-link:hover {
+    color: $white !important;
+}
+
+.btn-clay {
+    box-shadow: 0 8px 20px rgba($clay-dark, 0.55);
+}
+
+.btn-clay:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba($clay-dark, 0.75);
+}
+
+.btn-outline-light:hover {
+    border-color: $white;
+}
+
+ .destination-card:first-child {
+    height: 270px;
+}
+
+.destination-card-sm {
+    height: 225px;
+}
+
+.destination-card img {
+    transition: transform 0.3s ease;
+}
+
+.destination-card:hover img {
+    transform: scale(1.04);
+}
+
+ .pricing-featured {
+     border: 1px solid $clay !important;
+ }
+
+.text-ink {
+    color: $ink !important;
+}
+
+.text-ink {
+    color: $ink !important;
+}
+.bg-paper-2 {  background-color: $paper-2 !important;
+}
